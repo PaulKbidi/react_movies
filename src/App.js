@@ -60,9 +60,9 @@ function App() {
       <main>
         {movies
           .sort((a, b) => {
-            if (sort == "top") {
+            if (sort === "top") {
               return b.vote_average - a.vote_average;
-            } else if (sort == "flop") {
+            } else if (sort === "flop") {
               return a.vote_average - b.vote_average;
             } else {
               return 0;
