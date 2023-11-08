@@ -17,7 +17,7 @@ function App() {
         );
         const data = await request.json();
         setMovies(data.results)
-        console.log(data.results);
+        console.log(movies);
     }
 
   return (
